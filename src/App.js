@@ -8,21 +8,19 @@ import Promocoes from './components/pages/Promocoes.js'
 import Contato from './components/pages/Contato.js'
 import Footer from './components/Footer'
 
-function App() {
+export default function App() {
   return (
     <>
       <Router>
         <Navbar />
         <Routes>
           <Route path="/" exact element={<Home />} />
-          <Route path="/destinos" exact element={<Destinos />} />
-          <Route path="/promocoes" exact element={<Promocoes />} />
-          <Route path="/contato" exact element={<Contato />} />
+          <Route path="/Destinos" element={<Destinos />} />
+          <Route path="/Promocoes" element={<Promocoes />} />
+          <Route path="/Contato" element={<Contato />} />
         </Routes>
         <Footer />
       </Router>
     </>
   )
 }
-
-export default App

@@ -1,10 +1,14 @@
 import React from 'react'
+import Cards from '../Cards'
+
+import '../../App.css'
 
 export default function Destinos() {
   return (
-    <div>
+    <div className="destinos">
       <h1>Destinos</h1>
-      <p>Lorem lorem lorem</p>
+
+      {/* <Cards /> */}
     </div>
   )
 }

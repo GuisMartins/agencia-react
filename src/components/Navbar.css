@@ -19,7 +19,7 @@
 }
 
 .navbar-logo {
-  color: #fff;
+  color: var(--primary);
   margin-left: 20px;
   cursor: pointer;
   text-decoration: none;
@@ -34,11 +34,17 @@
   font-size: 1.8rem;
 }
 
+.navbar-container {
+  display: flex;
+  justify-content: space-around !important;
+}
+
 .nav-menu {
   display: flex;
   grid-gap: 10px;
   list-style: none;
   text-align: center;
+  justify-content: end;
   width: 60vw;
   margin-right: 2rem;
 }
@@ -48,7 +54,7 @@
 }
 
 .nav-links {
-  color: #fff;
+  color: var(--primary);
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -57,12 +63,12 @@
 }
 
 .nav-links:hover {
-  border-bottom: 4px solid #fff;
+  border-bottom: 4px solid var(--primary);
   transition: all 0.2s ease-out;
 }
 
 .fa-bars {
-  color: #fff;
+  color: var(--primary);
 }
 
 .nav-links-mobile {
@@ -82,6 +88,7 @@
     display: flex;
     flex-direction: column;
     align-content: flex-start;
+    justify-content: start;
     width: 100%;
     height: 90vh;
     position: absolute;
@@ -110,8 +117,8 @@
   }
 
   .nav-links:hover {
-    background-color: #fff;
-    color: #242424;
+    background-color: var(--primary);
+    color: var(--secondary);
     /* order-radius: 0; */
   }
 
@@ -133,7 +140,7 @@
   }
 
   .fa-times {
-    color: #fff;
+    color: var(--primary);
     font-size: 2rem;
   }
 
@@ -146,15 +153,15 @@
     text-decoration: none;
     font-size: 1.5rem;
     background-color: transparent;
-    color: #fff;
+    color: var(--primary);
     padding: 14px 20px;
-    border: 1px solid #fff;
+    border: 1px solid var(--primary);
     transition: all 0.3s ease-out;
   }
 
   .nav-links-mobile:hover {
-    /* background: #fff; */
-    color: #242424;
+    /* background: var(--primary); */
+    color: var(--secondary);
     transition: 250ms;
   }
 }

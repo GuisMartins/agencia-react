@@ -2,6 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #242424;
-  color: #fff;
+  background-color: var(--secondary);
+  color: var(--primary);
 }

@@ -12,46 +12,50 @@ function Navbar() {
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <Link to="/" className="navbar-logo">
-            Agencia <i className="fab fa-typo3" />
-          </Link>
-          <div className="menu-icon" onClick={handleClick}>
-            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+          <div className="nav-logo">
+            <Link to="/" className="navbar-logo">
+              Agencia <i className="fab fa-typo3" />
+            </Link>
+            <div className="menu-icon" onClick={handleClick}>
+              <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+            </div>
           </div>
-          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-            <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
-                Inico
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                to="/destinos"
-                className="nav-links"
-                onClick={closeMobileMenu}
-              >
-                Destinos
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                to="/promocoes"
-                className="nav-links"
-                onClick={closeMobileMenu}
-              >
-                Promoções
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                to="/contato"
-                className="nav-links"
-                onClick={closeMobileMenu}
-              >
-                Contato
-              </Link>
-            </li>
-          </ul>
+          <div className="nav-link">
+            <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+              <li className="nav-item">
+                <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+                  Inico
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  to="/destinos"
+                  className="nav-links"
+                  onClick={closeMobileMenu}
+                >
+                  Destinos
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  to="/promocoes"
+                  className="nav-links"
+                  onClick={closeMobileMenu}
+                >
+                  Promoções
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  to="/contato"
+                  className="nav-links"
+                  onClick={closeMobileMenu}
+                >
+                  Contato
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </>
