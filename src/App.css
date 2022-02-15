@@ -23,7 +23,7 @@
 }
 .contato {
   flex-flow: column;
-  background-image: url('../public/images/img-2.jpg');
+  background-image: url('../public/images/img-5.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -43,7 +43,7 @@
 
 .promocoes {
   flex-flow: column;
-  background-image: url('../public/images/img-8.jpg');
+  background-image: url('../public/images/img-6.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
