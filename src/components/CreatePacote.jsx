@@ -69,9 +69,9 @@ class CreatePacote extends Component {
 
   getTitle() {
     if (this.state.idPacote === '_add') {
-      return <h3 className="text-center">Adicionar funcionario</h3>
+      return <h3 className="text-center">Adicionar Pacote</h3>
     } else {
-      return <h3 className="text-center">Editar fincionario</h3>
+      return <h3 className="text-center">Editar Pacote</h3>
     }
   }
   render() {
@@ -87,23 +87,23 @@ class CreatePacote extends Component {
               <div className="card-body">
                 <form>
                   <div className="form-group mb-3">
-                    <label> Primerio nome: </label>
-                    <input placeholder="Primerio nome" name="destino" className="form-control"
+                    <label> Destino: </label>
+                    <input placeholder="Destino" name="destino" className="form-control"
                       value={this.state.destino} onChange={this.changeDestinoHandler} />
                   </div>
                   <div className="form-group mb-3">
-                    <label> Sobrenome: </label>
-                    <input placeholder="Sobrenome" name="dias" className="form-control"
+                    <label> Dias: </label>
+                    <input placeholder="Dias" name="dias" className="form-control"
                       value={this.state.dias} onChange={this.changeDiasHandler} />
                   </div>
                   <div className="form-group mb-3">
-                    <label> Email: </label>
-                    <input placeholder="Endereço de e-mail" name="valor" className="form-control"
+                    <label> Valor: </label>
+                    <input placeholder="Valor" name="valor" className="form-control"
                       value={this.state.valor} onChange={this.changeValorHandler} />
                   </div>
-                  <div className=' '>
-                    <button className="btn btn-success me-2" onClick={this.saveOrUpdatePacote}>Salvar</button>
-                    <button className="btn btn-danger " onClick={this.cancel.bind(this)} >Cancelar</button>
+                  <div className='w-75 mx-auto' >
+                    <button className="btn_ btn--success m-2 mx-auto" onClick={this.saveOrUpdatePacote}>Salvar</button>
+                    <button className="btn_ btn--success m-2 mx-auto" onClick={this.cancel.bind(this)} >Cancelar</button>
                   </div>
                 </form>
               </div>

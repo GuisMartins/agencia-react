@@ -41,15 +41,15 @@ class ListCliente extends Component {
   render() {
     return (
       <div className='container w-75 mt-5'>
-        <h2 className="text-center">Lista de funcionarios</h2>
+        <h2 className="text-center">Lista de Clientes</h2>
         <div className="row">
-          <button className="btn btn-primary my-1" onClick={this.addCliente}>
-            Adicionar funcionario
+          <button className="bbtn_ btn--success m-2 mx-auto" onClick={this.addCliente}>
+            Adicionar Cliente
           </button>
         </div>
 
         <div className="row mt-2">
-          <table className="table table-striped table-bordered">
+          <table className="table table-bordered">
             <thead>
               <tr>
                 <th className='text-center'> Nome </th>
@@ -73,19 +73,19 @@ class ListCliente extends Component {
                   <td>
                     <button
                       onClick={() => this.editCliente(cliente.idCliente)}
-                      className="btn btn-info m-1"
+                      className="btn_ btn--success m-2 mx-auto"
                     >
                       Alterar{' '}
                     </button>
                     <button
                       onClick={() => this.deleteCliente(cliente.idCliente)}
-                      className="btn btn-danger m-1"
+                      className="btn_ btn--success m-2 mx-auto"
                     >
                       Deletar{' '}
                     </button>
                     <button
                       onClick={() => this.viewCliente(cliente.idCliente)}
-                      className="btn btn-info m-1"
+                      className="btn_ btn--success m-2 mx-auto"
                     >
                       Visualizar{' '}
                     </button>

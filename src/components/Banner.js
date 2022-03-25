@@ -12,7 +12,7 @@ export default function Banner() {
       <p>O que você esta esperando?</p>
       <div className="banner-btns">
         <Button
-          className="btns btn btn--outline, btn--large"
+          className="btns btn_ btn--outline, btn--large"
           class="btn--outline btn btn--large"
           text="DESTINOS"
           path="/Destinos"

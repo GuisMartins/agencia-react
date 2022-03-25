@@ -65,9 +65,9 @@ class CreateReserva extends Component {
 
   getTitle() {
     if (this.state.idReserva === '_add') {
-      return <h3 className="text-center">Adicionar funcionario</h3>
+      return <h3 className="text-center">Adicionar Reserva</h3>
     } else {
-      return <h3 className="text-center">Editar fincionario</h3>
+      return <h3 className="text-center">Editar Reserva</h3>
     }
   }
   render() {
@@ -83,21 +83,21 @@ class CreateReserva extends Component {
               <form>
                 <div className="card-body col">
                   <div className="form-group mb-3">
-                    <label> Primerio nome: </label>
-                    <input placeholder="Primerio nome" name="fkIdCliente" className="form-control"
+                    <label> Cod do Cliente : </label>
+                    <input placeholder="Cod do CLiente" name="fkIdCliente" className="form-control"
                       value={this.state.fkIdCliente.idCliente} onChange={this.changeFkIdClienteHandler} />
                   </div>
                 </div>
                 <div className="card-body col">
                   <div className="form-group mb-3">
-                    <label> Sobrenome: </label>
-                    <input placeholder="Sobrenome" name="fkIdPacote" className="form-control"
+                    <label> Cod do Pacote: </label>
+                    <input placeholder="Cod do Pacote" name="fkIdPacote" className="form-control"
                       value={this.state.fkIdPacote.idPacote} onChange={this.changeFkIdPacoteHandler} />
                   </div>
                 </div>
-                <div className=' '>
-                  <button className="btn btn-success me-2" onClick={this.saveOrUpdatePacote}>Salvar</button>
-                  <button className="btn btn-danger " onClick={this.cancel.bind(this)} >Cancelar</button>
+                <div className='w-75 mx-auto'>
+                  <button className="btn_ btn--success m-2 mx-auto" onClick={this.saveOrUpdatePacote}>Salvar</button>
+                  <button className="btn_ btn--success m-2 mx-auto" onClick={this.cancel.bind(this)} >Cancelar</button>
                 </div>
               </form>
             </div>

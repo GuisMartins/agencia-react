@@ -22,18 +22,18 @@ class ViewPacote extends Component {
       <div className='mt-3'>
 
         <div className="card col-md-6 offset-md-3">
-          <h2 className="text-center my-1">Detalhes do Funcionario </h2>
+          <h2 className="text-center my-1">Detalhes do Pacote </h2>
           <div className="card-body">
             <div className="row mb-2">
-              <label className='fw-bold'>Primeiro nome: </label>
+              <label className='fw-bold'>Destino: </label>
               <div> {this.state.pacote.destino}</div>
             </div>
             <div className="row mb-2">
-              <label className='fw-bold'> Sobrenome: </label>
+              <label className='fw-bold'> Dias: </label>
               <div> {this.state.pacote.dias}</div>
             </div>
             <div className="row">
-              <label className='fw-bold'> Email: </label>
+              <label className='fw-bold'> Valor: </label>
               <div> {this.state.pacote.valor}</div>
             </div>
           </div>

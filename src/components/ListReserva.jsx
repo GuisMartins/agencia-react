@@ -43,13 +43,13 @@ class ListReserva extends Component {
       <div className='container w-75 mt-5'>
         <h2 className="text-center">Lista de funcionarios</h2>
         <div className="row">
-          <button className="btn btn-primary my-1" onClick={this.addReserva}>
+          <button className="btn_ btn--success m-2 mx-auto" onClick={this.addReserva}>
             Adicionar funcionario
           </button>
         </div>
 
         <div className="row mt-2">
-          <table className="table table-striped table-bordered">
+          <table className="table table-bordered">
             <thead>
               <tr>
                 <th className='text-center'> Cod do Cliente </th>
@@ -72,19 +72,19 @@ class ListReserva extends Component {
                   <td>
                     <button
                       onClick={() => this.editReserva(reserva.idReserva)}
-                      className="btn btn-info m-1"
+                      className="btn_ btn--success m-2 mx-auto"
                     >
                       Alterar{' '}
                     </button>
                     <button
                       onClick={() => this.deleteReserva(reserva.idReserva)}
-                      className="btn btn-danger m-1"
+                      className="btn_ btn--success m-2 mx-auto"
                     >
                       Deletar{' '}
                     </button>
                     <button
                       onClick={() => this.viewReserva(reserva.idReserva)}
-                      className="btn btn-info m-1"
+                      className="btn_ btn--success m-2 mx-auto"
                     >
                       Visualizar{' '}
                     </button>

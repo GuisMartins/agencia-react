@@ -85,9 +85,9 @@ class CreateCliente extends Component {
 
   getTitle() {
     if (this.state.idCliente === '_add') {
-      return <h3 className="text-center">Adicionar funcionario</h3>
+      return <h3 className="text-center">Adicionar Cliente</h3>
     } else {
-      return <h3 className="text-center">Editar fincionario</h3>
+      return <h3 className="text-center">Editar Cliente</h3>
     }
   }
   render() {
@@ -132,9 +132,9 @@ class CreateCliente extends Component {
                     <input placeholder="Endereço" name="endereco" className="form-control"
                       value={this.state.endereco} onChange={this.changeEnderecoHandler} />
                   </div>
-                  <div className=' '>
-                    <button className="btn btn-success me-2" onClick={this.saveOrUpdateCliente}>Salvar</button>
-                    <button className="btn btn-danger " onClick={this.cancel.bind(this)} >Cancelar</button>
+                  <div className='w-75 mx-auto'>
+                    <button className="btn_ btn--success m-2 mx-auto" onClick={this.saveOrUpdateCliente}>Salvar</button>
+                    <button className="btn_ btn--success m-2 " onClick={this.cancel.bind(this)} >Cancelar</button>
                   </div>
                 </form>
               </div>

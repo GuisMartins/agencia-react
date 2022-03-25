@@ -41,15 +41,15 @@ class ListPacote extends Component {
   render() {
     return (
       <div className='container w-75 mt-5'>
-        <h2 className="text-center">Lista de funcionarios</h2>
+        <h2 className="text-center">Lista de Pacotes</h2>
         <div className="row">
-          <button className="btn btn-primary my-1" onClick={this.addPacote}>
-            Adicionar funcionario
+          <button className="btn_ btn--success m-2 mx-auto" onClick={this.addPacote}>
+            Adicionar Pacote
           </button>
         </div>
 
         <div className="row mt-2">
-          <table className="table table-striped table-bordered">
+          <table className="table table-bordered">
             <thead>
               <tr>
                 <th className='text-center'> Destino </th>
@@ -63,23 +63,23 @@ class ListPacote extends Component {
                 <tr key={pacote.idPacote}>
                   <td> {pacote.destino} </td>
                   <td> {pacote.dias}</td>
-                  <td> {pacote.valor}</td>
+                  <td> R$ {pacote.valor}</td>
                   <td>
                     <button
                       onClick={() => this.editPacote(pacote.idPacote)}
-                      className="btn btn-info m-1"
+                      className="btn_ btn--success m-2 mx-auto"
                     >
                       Alterar{' '}
                     </button>
                     <button
                       onClick={() => this.deletePacote(pacote.idPacote)}
-                      className="btn btn-danger m-1"
+                      className="btn_ btn--success m-2 mx-auto"
                     >
                       Deletar{' '}
                     </button>
                     <button
                       onClick={() => this.viewPacote(pacote.idPacote)}
-                      className="btn btn-info m-1"
+                      className="btn_ btn--success m-2 mx-auto"
                     >
                       Visualizar{' '}
                     </button>
