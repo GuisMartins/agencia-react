@@ -40,10 +40,10 @@ class ListCliente extends Component {
 
   render() {
     return (
-      <div className='container w-75 mt-5'>
+      <div className='container w-75 mt-5 min-vh-100'>
         <h2 className="text-center">Lista de Clientes</h2>
         <div className="row">
-          <button className="bbtn_ btn--success m-2 mx-auto" onClick={this.addCliente}>
+          <button className="btn_ btn--success m-2 mx-auto" onClick={this.addCliente}>
             Adicionar Cliente
           </button>
         </div>

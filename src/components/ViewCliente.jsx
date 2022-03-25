@@ -19,7 +19,7 @@ class ViewCliente extends Component {
 
   render() {
     return (
-      <div className='mt-3'>
+      <div className='mt-3 min-vh-100'>
 
         <div className="card col-md-6 offset-md-3">
           <h2 className="text-center my-1">Detalhes do Cliente </h2>

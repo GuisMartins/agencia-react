@@ -40,8 +40,8 @@ class ListReserva extends Component {
 
   render() {
     return (
-      <div className='container w-75 mt-5'>
-        <h2 className="text-center">Lista de funcionarios</h2>
+      <div className='container w-75 mt-5 min-vh-100'>
+        <h2 className="text-center">Lista de Reserva</h2>
         <div className="row">
           <button className="btn_ btn--success m-2 mx-auto" onClick={this.addReserva}>
             Adicionar funcionario
