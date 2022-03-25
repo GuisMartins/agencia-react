@@ -1,11 +1,27 @@
 import React from 'react'
-import Navbar from './components/Navbar'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+
 import './App.css'
-import Home from './components/pages/Home.js'
-import Destinos from './components/pages/Destinos.js'
-import Promocoes from './components/pages/Promocoes.js'
-import Contato from './components/pages/Contato.js'
+
+import Home from './components/pages/Home'
+import Destinos from './components/pages/Destinos'
+import Promocoes from './components/pages/Promocoes'
+import Contato from './components/pages/Contato'
+import Admin from './components/pages/Admin'
+
+import ListCliente from './components/ListCliente'
+import CreateCliente from './components/CreateCliente'
+import ViewCliente from './components/ViewCliente'
+
+import ListPacote from './components/ListPacote'
+import CreatePacote from './components/CreatePacote'
+import ViewPacote from './components/ViewPacote'
+
+import ListReserva from './components/ListReserva'
+import CreateReserva from './components/CreateReserva'
+import ViewReserva from './components/ViewReserva'
+
+import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 
 export default function App() {
@@ -13,12 +29,25 @@ export default function App() {
     <>
       <Router>
         <Navbar />
-        <Routes>
-          <Route path="/" exact element={<Home />} />
-          <Route path="/Destinos" element={<Destinos />} />
-          <Route path="/Promocoes" element={<Promocoes />} />
-          <Route path="/Contato" element={<Contato />} />
-        </Routes>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/Destinos" component={Destinos} />
+          <Route path="/Promocoes" component={Promocoes} />
+          <Route path="/Contato" component={Contato} />
+          <Route path="/Admin" component={Admin} />
+
+          <Route path="/clientes" component={ListCliente} />
+          <Route path="/add-cliente/:idCliente" component={CreateCliente} />
+          <Route path="/view-cliente/:idCliente" component={ViewCliente} />
+
+          <Route path="/pacotes" component={ListPacote} />
+          <Route path="/add-pacote/:idPacote" component={CreatePacote} />
+          <Route path="/view-pacote/:idPacote" component={ViewPacote} />
+
+          <Route path="/reservas" component={ListReserva} />
+          <Route path="/add-reserva/:idReserva" component={CreateReserva} />
+          <Route path="/view-reserva/:idReserva" component={ViewReserva} />
+        </Switch>
         <Footer />
       </Router>
     </>
